@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #f7f7f7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #hearts-container {
+            position: relative;
+            font-size: 3em;
+            color: red;
+            animation: floatHearts 2s linear infinite;
+        }
+
+        @keyframes floatHearts {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="hearts-container">
+        ❤️❤️❤️❤️❤️❤️
+    </div>
+
+</body>
+</html>
