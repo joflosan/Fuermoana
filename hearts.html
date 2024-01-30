@@ -10,14 +10,19 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            overflow: hidden;
+            flex-direction: column;
         }
 
         #hearts-container {
-            position: relative;
             font-size: 3em;
             color: red;
             animation: floatHearts 2s linear infinite;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: black;
         }
 
         @keyframes floatHearts {
@@ -37,6 +42,10 @@
 
     <div id="hearts-container">
         ❤️❤️❤️❤️❤️❤️
+    </div>
+
+    <div id="message">
+        Lots of love, wir sehen uns.
     </div>
 
 </body>
